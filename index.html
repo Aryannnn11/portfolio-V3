@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#121514">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Aryan Kumar, IIT Madras student and software developer. Explore full-stack applications, secure payments, an npm developer toolkit and interactive games.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Aryan Kumar — Developer / Builder">
+    <meta property="og:description" content="Four shipped projects. Full-stack systems, developer tools, and creative code.">
+    <title>Aryan Kumar — Developer / Builder</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <div class="progress" aria-hidden="true">
+      <span id="progress"></span>
+    </div>
+    <div id="pointer-glow" class="pointer-glow" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="Aryan Kumar, home"><span class="brand-square">A<span>✳</span></span><span>ARYAN KUMAR <small>DEVELOPER / BUILDER</small></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#work">WORK <sup>04</sup></a>
+        <a href="#about">ABOUT</a>
+        <a href="#stack">STACK</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <div class="top-actions">
+        <button class="icon-btn" id="palette-open" aria-label="Open quick navigation" title="Command menu (Ctrl+K)">⌕ <kbd>⌘K</kbd></button>
+        <button class="icon-btn theme-btn" id="theme-toggle" aria-label="Switch theme" aria-pressed="false" title="Switch theme">◑</button>
+        <a class="resume-header" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">RÉSUMÉ <span>↗</span></a>
+        <button id="menu-toggle" class="menu-btn" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">☰</button>
+      </div>
+    </header>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" hidden>
+      <a href="#work">Selected work</a>
+      <a href="#about">About</a>
+      <a href="#stack">Tech stack</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer">Résumé ↗</a>
+    </nav>
+    <main id="content">
+      <section id="home" class="hero" aria-label="Introduction">
+        <div class="hero-top">
+          <span class="eyebrow"><span class="availability-dot"></span> OPEN TO SOFTWARE DEVELOPMENT ROLES</span>
+          <span class="hero-index">INDIA • 2026 <span class="divider-v">/</span> PORTFOLIO Nº 03</span>
+        </div>
+        <div class="hero-title">
+          <p class="tiny-label">HELLO, WORLD. I'M ARYAN.</p>
+          <h1>IDEAS <span class="outlined">INTO</span><br><span class="headline-row">IMPACT<span class="hero-mark" aria-hidden="true">✳</span><span class="hero-period">.</span></span></h1>
+        </div>
+        <div class="hero-bottom">
+          <div class="intro-copy">
+            <span class="vertical-rule"></span>
+            <p>I'm Aryan. I enjoy figuring out how things work, then trying to build them myself.<br><strong>Lately, that's meant full-stack apps and developer tools</strong>—and learning something new with every project.</p>
+          </div>
+          <a href="#work" class="circle-link" aria-label="Scroll to selected projects"><span>EXPLORE<br>MY WORK</span><span class="circle-arrow">↘</span></a>
+        </div>
+        <div class="hero-baseline">
+          <span>SCROLL TO EXPLORE ↓</span>
+          <span>ENGINEERING STUDENT — IIT MADRAS</span>
+          <span>01 / 05</span>
+        </div>
+        <div class="hero-wire" aria-hidden="true">
+          <span class="wire wire-1"></span>
+          <span class="wire wire-2"></span>
+          <span class="wire wire-3"></span>
+        </div>
+      </section>
+      <div class="marquee" aria-label="I like figuring things out. Built with trial and error. One project at a time.">
+        <div class="marquee-track" aria-hidden="true">
+          <div class="marquee-group">
+            <span>I LIKE FIGURING THINGS OUT</span>
+            <i aria-hidden="true">✳</i>
+            <span>BUILT WITH TRIAL AND ERROR</span>
+            <i aria-hidden="true">✳</i>
+            <span>ONE PROJECT AT A TIME</span>
+            <i aria-hidden="true">✳</i>
+          </div>
+          <div class="marquee-group">
+            <span>I LIKE FIGURING THINGS OUT</span>
+            <i aria-hidden="true">✳</i>
+            <span>BUILT WITH TRIAL AND ERROR</span>
+            <i aria-hidden="true">✳</i>
+            <span>ONE PROJECT AT A TIME</span>
+            <i aria-hidden="true">✳</i>
+          </div>
+        </div>
+      </div>
+      <section class="work-section section-pad" id="work">
+        <div class="section-heading">
+          <div>
+            <span class="section-num">01 / SELECTED WORK</span>
+            <h2>PROOF OF <em>WORK.</em></h2>
+          </div>
+          <p>Not just concepts. Real builds, public demos, working systems.<br>Choose a project to explore what happens behind the interface.</p>
+        </div>
+        <div class="work-layout">
+          <div class="work-menu" role="tablist" aria-label="Select a project">
+            <button class="work-tab selected" id="tab-sub" type="button" data-project="sub" role="tab" aria-selected="true" aria-controls="project-display"><span class="tab-index">01</span><span class="tab-name">SUBSCRIPTION<br>TRACKER</span><span class="tab-meta">FULL-STACK + AI</span><span class="tab-arrow">↗</span></button>
+            <button class="work-tab" id="tab-pay" type="button" data-project="pay" role="tab" aria-selected="false" aria-controls="project-display"><span class="tab-index">02</span><span class="tab-name">PAYMENT GATEWAY<br>PORTAL</span><span class="tab-meta">FINTECH / SECURITY</span><span class="tab-arrow">↗</span></button>
+            <button class="work-tab" id="tab-cli" type="button" data-project="cli" role="tab" aria-selected="false" aria-controls="project-display"><span class="tab-index">03</span><span class="tab-name">DEVTOOL<br>CLI</span><span class="tab-meta">DEVELOPER TOOLING</span><span class="tab-arrow">↗</span></button>
+            <button class="work-tab" id="tab-simon" type="button" data-project="simon" role="tab" aria-selected="false" aria-controls="project-display"><span class="tab-index">04</span><span class="tab-name">SIMON<br>GAME</span><span class="tab-meta">CREATIVE CODING</span><span class="tab-arrow">↗</span></button>
+            <span class="work-hint">↑ ↓ TO SWITCH PROJECTS · CLICK TO EXPLORE</span>
+          </div>
+          <div id="project-display" class="project-display" role="tabpanel" aria-labelledby="tab-sub" tabindex="0">
+            <div id="project-art" class="art art-sub" aria-label="Stylized illustration of subscription analytics">
+              <div class="art-corner">PROJECT / <span id="art-index">01</span></div>
+              <div class="art-corner right">LIVE PRODUCT ↗</div>
+              <div class="art-canvas" id="art-canvas">
+                <div class="visual-app">
+                  <div class="visual-app-head"><span class="mini-logo">S/</span> SUBTRACKER <span class="visual-pills">OVERVIEW <b>✳</b></span></div>
+                  <div class="visual-app-content">
+                    <p>YOUR RECURRING SPEND</p>
+                    <strong>₹2,718<span>/mo</span></strong>
+                    <div class="visual-chart">
+                      <i style="height:35%"></i>
+                      <i style="height:57%"></i>
+                      <i style="height:41%"></i>
+                      <i style="height:78%"></i>
+                      <i style="height:62%"></i>
+                      <i style="height:94%"></i>
+                      <i style="height:67%"></i>
+                      <i style="height:85%"></i>
+                      <i style="height:60%"></i>
+                    </div>
+                    <div class="visual-row">
+                      <span>✳ AI SPENDING ANALYSIS</span>
+                      <b>↗</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="art-foot">BUILT TO SOLVE REAL PROBLEMS <span>↗</span></span>
+            </div>
+            <div class="project-info">
+              <div class="project-info-top">
+                <span id="project-category">FULL-STACK APPLICATION / AI</span>
+                <span id="project-count">01 — 04</span>
+              </div>
+              <h3 id="project-title">Subscription Tracker</h3>
+              <p id="project-description">A subscription command center with authentication, renewal reminders, spending analytics, and an AI assistant that works with real PostgreSQL data.</p>
+              <div class="tech-row" id="project-tech">
+                <span>REACT</span>
+                <span>NODE.JS</span>
+                <span>POSTGRESQL</span>
+                <span>GROQ AI</span>
+              </div>
+              <div class="project-info-actions">
+                <button class="detail-btn" id="case-open" type="button">THE STORY BEHIND IT <span>↗</span></button>
+                <a id="project-live" href="https://subscription-tracker-eta-ten.vercel.app/" target="_blank" rel="noopener noreferrer">LIVE DEMO ↗</a>
+                <a id="project-code" href="https://github.com/Aryannnn11/subscription-tracker" target="_blank" rel="noopener noreferrer">SOURCE ↗</a>
+                <a id="project-extra" href="https://www.npmjs.com/package/aryan-devtool-cli" target="_blank" rel="noopener noreferrer" hidden>NPM ↗</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="work-outro">FOUR PROJECTS. DIFFERENT PROBLEMS. ONE COMMON THREAD: <strong>BUILD IT FOR REAL.</strong></p>
+      </section>
+      <section class="about-section section-pad" id="about">
+        <div class="section-heading">
+          <div>
+            <span class="section-num">02 / THE PERSON</span>
+            <h2>MORE THAN <em>CODE.</em></h2>
+          </div>
+          <p>Curious by nature. Engineering by training.<br>Always looking for the next problem worth solving.</p>
+        </div>
+        <div class="about-layout">
+          <div class="about-statement">
+            <span class="statement-star">✳</span>
+            <p>“Good software is equal parts <em>thinking clearly</em> and <em>building carefully.</em>”</p>
+            <span class="statement-foot">MY APPROACH / 2026</span>
+          </div>
+          <div class="about-content">
+            <p>I'm currently studying <strong>Naval Architecture and Ocean Engineering</strong> at <strong>Indian Institute of Technology Madras</strong>, but I've always been curious about software and how things work behind the scenes.</p>
+            <p>What started as an interest turned into building my own projects—from full-stack web apps to developer tools. I've learned a lot along the way, especially from figuring things out when they don't work the first time.</p>
+            <p>I'm now looking for opportunities in software development where I can keep learning, work with experienced developers, and build things that people actually use.</p>
+            <div class="edu-row">
+              <div>
+                <span>EDUCATION</span>
+                <strong>INDIAN INSTITUTE OF TECHNOLOGY MADRAS</strong>
+                <small>B.Tech · Naval Architecture and Ocean Engineering</small>
+              </div>
+              <b>2023—2027</b>
+            </div>
+            <a href="assets/resume.pdf" class="underlink" target="_blank" rel="noopener noreferrer">READ MY RÉSUMÉ <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+      <section class="stack-section section-pad" id="stack">
+        <div class="section-heading">
+          <div>
+            <span class="section-num">03 / THE TOOLKIT</span>
+            <h2>TOOLS OF <em>TRADE.</em></h2>
+          </div>
+          <p>Technologies I work with and have applied in projects.<br>The tools change. The problem-solving stays.</p>
+        </div>
+        <div class="stack-grid">
+          <div class="stack-card">
+            <span class="stack-card-num">01 / FRONTEND</span>
+            <h3>THE<br>INTERFACE.</h3>
+            <div class="chips">
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>React</span>
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>Vite</span>
+              <span>Responsive UI</span>
+            </div>
+            <span class="stack-deco">{ }</span>
+          </div>
+          <div class="stack-card">
+            <span class="stack-card-num">02 / BACKEND</span>
+            <h3>THE<br>ENGINE.</h3>
+            <div class="chips">
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>REST APIs</span>
+              <span>PostgreSQL</span>
+              <span>SQL</span>
+              <span>JWT</span>
+              <span>Python</span>
+            </div>
+            <span class="stack-deco">&lt;/&gt;</span>
+          </div>
+          <div class="stack-card">
+            <span class="stack-card-num">03 / DELIVERY</span>
+            <h3>THE<br>WORKFLOW.</h3>
+            <div class="chips">
+              <span>Git & GitHub</span>
+              <span>GitHub Actions</span>
+              <span>Vercel</span>
+              <span>Render</span>
+              <span>Neon</span>
+              <span>npm</span>
+              <span>Vitest</span>
+              <span>Groq API</span>
+              <span>Razorpay</span>
+            </div>
+            <span class="stack-deco">↗</span>
+          </div>
+        </div>
+      </section>
+      <section class="play-section section-pad" id="play">
+        <div class="play-copy">
+          <span class="section-num">04 / SOMETHING INTERACTIVE</span>
+          <h2>TAKE A<br><em>BREATHER.</em></h2>
+          <p>My Simon Game is all about patterns. Here's a tiny interactive tribute: tap the sequence in the correct order. Each round gets a little harder.</p>
+          <div class="play-status" id="play-status" aria-live="polite">READY WHEN YOU ARE.</div>
+          <button type="button" class="play-start" id="play-start">START MINI SIMON <span>↗</span></button>
+          <a href="https://simon-game-olive-gamma.vercel.app/" class="underlink" target="_blank" rel="noopener noreferrer">PLAY THE FULL GAME ↗</a>
+        </div>
+        <div class="play-board" id="play-board" aria-label="Mini Simon color memory game">
+          <button class="play-pad green" data-color="0" aria-label="Green pad"></button>
+          <button class="play-pad orange" data-color="1" aria-label="Orange pad"></button>
+          <button class="play-pad yellow" data-color="2" aria-label="Yellow pad"></button>
+          <button class="play-pad blue" data-color="3" aria-label="Blue pad"></button>
+          <div class="play-center" id="play-level" aria-live="polite">
+            <span>LEVEL</span>
+            <strong>—</strong>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section section-pad" id="contact">
+        <div class="contact-eyebrow"><span class="availability-dot"></span> OPEN TO OPPORTUNITIES <span>05 / WHAT'S NEXT</span></div>
+        <p class="contact-pre">GOT SOMETHING TO BUILD?</p>
+        <h2>LET'S MAKE<br>IT <em>HAPPEN.</em><span>↗</span></h2>
+        <div class="contact-footer">
+          <p>Full-stack opportunities, interesting technical challenges, and thoughtful collaborations — let's connect through GitHub.</p>
+          <div class="contact-buttons">
+            <a href="https://github.com/Aryannnn11" target="_blank" rel="noopener noreferrer" class="contact-primary">MY GITHUB PROFILE <span>↗</span></a>
+            <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="contact-secondary">VIEW RÉSUMÉ ↗</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <span>© <span id="year">2026</span> ARYAN KUMAR</span>
+      <span>BUILT WITH CURIOSITY & A LITTLE CAFFEINE.</span>
+      <a href="#home">BACK TO TOP ↑</a>
+    </footer>
+    <dialog id="case-dialog" class="case-dialog" aria-labelledby="case-title">
+      <div class="case-inner">
+        <div class="case-head">
+          <span>PROJECT / DEEP DIVE</span>
+          <button type="button" id="case-close" aria-label="Close project details">CLOSE ✕</button>
+        </div>
+        <div id="case-body"></div>
+      </div>
+    </dialog>
+    <dialog id="command-dialog" class="command-dialog" aria-label="Quick navigation">
+      <div class="command-box">
+        <div class="command-input-wrap">
+          <span>⌕</span>
+          <input type="search" id="command-input" placeholder="Jump to a section or project..." aria-label="Search navigation">
+          <kbd>ESC</kbd>
+        </div>
+        <div id="command-results" class="command-results"></div>
+        <div class="command-hint">↑ ↓ SELECT · ENTER OPEN · ESC CLOSE</div>
+      </div>
+    </dialog>
+  </body>
+</html>
